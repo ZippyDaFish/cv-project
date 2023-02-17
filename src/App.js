@@ -8,12 +8,20 @@ class App extends Component {
   constructor(){
     super();
   }
+  onSubmitInfo = (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+  };
+
   render(){
     return(
       <div>
-        <General/>
-        <Education/>
-        <Experience/>
+        <form onSubmit={this.onSubmitInfo}>
+          <General/>
+          <Education/>
+          <Experience/>
+          <button type="submit">submit</button>
+        </form>
       </div>
     );
   }
