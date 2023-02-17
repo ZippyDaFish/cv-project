@@ -1,7 +1,13 @@
 import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return("");
+class App extends Component {
+  constructor(){
+    super();
+  }
+  render(){
+    
+  }
 }
 
 export default App;
