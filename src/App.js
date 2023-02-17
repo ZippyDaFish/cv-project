@@ -6,7 +6,11 @@ class App extends Component {
     super();
   }
   render(){
-    
+    return(
+      <div>
+        <p>Hello World</p>
+      </div>
+    );
   }
 }
 
