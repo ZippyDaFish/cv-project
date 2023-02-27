@@ -8,6 +8,11 @@ class App extends Component {
   constructor(){
     super();
   }
+
+  handleChange = (e) => {
+    console.log(e.target.value);
+  };
+
   onSubmitInfo = (e) => {
     e.preventDefault();
     console.log("Form submitted");

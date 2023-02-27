@@ -4,7 +4,7 @@ const General = () => {
     return(
         <div>
             <label htmlFor="nameInput">Name: </label>
-            <input 
+            <input
                 type="text"
                 id="nameInput"
             />
