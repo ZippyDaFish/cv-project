@@ -7,15 +7,20 @@ import Experience from './components/Experience';
 class App extends Component {
   constructor(){
     super();
+
+    this.state = {};
   }
 
   handleChange = (e) => {
-    console.log(e.target.value);
+    this.setState({
+      [e.target.id]: e.target.value
+    })
   };
 
   onSubmitInfo = (e) => {
     e.preventDefault();
     console.log("Form submitted");
+    console.log(this.state);
   };
 
   render(){
