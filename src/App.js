@@ -22,9 +22,9 @@ class App extends Component {
     return(
       <div>
         <form onSubmit={this.onSubmitInfo}>
-          <General/>
-          <Education/>
-          <Experience/>
+          <General doChange = {this.handleChange}/>
+          <Education doChange = {this.handleChange}/>
+          <Experience doChange = {this.handleChange}/>
           <button type="submit">submit</button>
         </form>
       </div>
