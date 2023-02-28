@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import General from "./components/General";
 import Education from './components/Education';
 import Experience from './components/Experience';
+import Overview from './components/Overview';
 
 class App extends Component {
   constructor(){
@@ -32,6 +33,7 @@ class App extends Component {
           <Experience doChange = {this.handleChange}/>
           <button type="submit">submit</button>
         </form>
+        <Overview info={this.state}/>
       </div>
     );
   }
