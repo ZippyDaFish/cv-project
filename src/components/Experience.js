@@ -3,23 +3,25 @@ import React from "react";
 const Experience = (props) => {
     return(
         <div>
-            <label htmlFor="companyInput">Company: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="companyInput"
+                placeholder="Company Name"
             />
             <label htmlFor="positionInput">Position: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="positionInput"
+                placeholder="Position Title"
             />
             <label htmlFor="taskInput">Tasks: </label>
             <input
                 onChange={props.doChange}
-                type="text"
+                type="textarea"
                 id="taskInput"
+
             />
             <div>
                 <label htmlFor="startDateInput">Start Date: </label>
