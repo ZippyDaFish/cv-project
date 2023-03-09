@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/Content.css'
 import React, { Component } from 'react';
 import General from "./components/General";
 import Education from './components/Education';
@@ -26,14 +27,18 @@ class App extends Component {
 
   render(){
     return(
-      <div>
-        <form onSubmit={this.onSubmitInfo}>
-          <General doChange = {this.handleChange}/>
-          <Education doChange = {this.handleChange}/>
-          <Experience doChange = {this.handleChange}/>
-          <button type="submit">submit</button>
-        </form>
-        <Overview info={this.state}/>
+      <div className='content'>
+        <div>
+          <form onSubmit={this.onSubmitInfo}>
+            <General doChange = {this.handleChange}/>
+            <Education doChange = {this.handleChange}/>
+            <Experience doChange = {this.handleChange}/>
+            <button type="submit">submit</button>
+          </form>
+        </div>
+        <div>
+          <Overview info={this.state}/>
+        </div>
       </div>
     );
   }

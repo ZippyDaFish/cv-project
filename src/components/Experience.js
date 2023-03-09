@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/Experience.css'
 
 const Experience = (props) => {
     return(
-        <div>
+        <div className="experience">
             <input
                 onChange={props.doChange}
                 type="text"

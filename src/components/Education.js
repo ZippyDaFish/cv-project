@@ -1,8 +1,9 @@
 import React from "react";
+import '../styles/Education.css'
 
 const Education = (props) => {
     return(
-        <div>
+        <div className="education">
             <input
                 onChange={props.doChange}
                 type="text"
