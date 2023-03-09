@@ -5,22 +5,25 @@ const Overview = (props) => {
     return(
         <div>
             <div id="generalInfo">
-                <p>{info.nameInput}</p>
-                <p>{info.emailInput}</p>
-                <p>{info.phoneInput}</p>
+                <h2>General Info</h2>
+                <p>Name: {info.nameInput}</p>
+                <p>Email: {info.emailInput}</p>
+                <p>Phone: {info.phoneInput}</p>
             </div>
             <div id="educationInfo">
-                <p>{info.schoolInput}</p>
-                <p>{info.subjectInput}</p>
-                <p>{info.dateInput}</p>
+                <h2>Education</h2>
+                <p>School: {info.schoolInput}</p>
+                <p>Subject: {info.subjectInput}</p>
+                <p>Date: {info.dateInput}</p>
             </div>
             <div id="experienceInfo">
-                <p>{info.companyInput}</p>
-                <p>{info.positionInput}</p>
-                <p>{info.taskInput}</p>
+                <h2>Experience</h2>
+                <p>Company: {info.companyInput}</p>
+                <p>Position: {info.positionInput}</p>
+                <p>Tasks: {info.taskInput}</p>
                 <div>
-                    <p>{info.startDateInput}</p>
-                    <p>{info.endDateInput}</p>
+                    <p>Start: {info.startDateInput}</p>
+                    <p>End: {info.endDateInput}</p>
                 </div>
             </div>
         </div>

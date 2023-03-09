@@ -30,9 +30,18 @@ class App extends Component {
       <div className='content'>
         <div>
           <form onSubmit={this.onSubmitInfo}>
-            <General doChange = {this.handleChange}/>
-            <Education doChange = {this.handleChange}/>
-            <Experience doChange = {this.handleChange}/>
+            <div>
+              <h2>General Info</h2>
+              <General doChange = {this.handleChange}/>
+            </div>
+            <div>
+              <h2>Education</h2>
+              <Education doChange = {this.handleChange}/>
+            </div>
+            <div>
+              <h2>Experience</h2>
+              <Experience doChange = {this.handleChange}/>
+            </div>
             <button type="submit">submit</button>
           </form>
         </div>
