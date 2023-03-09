@@ -3,23 +3,23 @@ import React from "react";
 const Education = (props) => {
     return(
         <div>
-            <label htmlFor="schoolInput">School: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="schoolInput"
+                placeholder="School"
             />
-            <label htmlFor="subjectInput">Subject: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="subjectInput"
+                placeholder="Subject"
             />
-            <label htmlFor="dateInput">Date: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="dateInput"
+                placeholder="Date"
             />
         </div>
     );

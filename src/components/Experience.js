@@ -9,32 +9,30 @@ const Experience = (props) => {
                 id="companyInput"
                 placeholder="Company Name"
             />
-            <label htmlFor="positionInput">Position: </label>
             <input
                 onChange={props.doChange}
                 type="text"
                 id="positionInput"
                 placeholder="Position Title"
             />
-            <label htmlFor="taskInput">Tasks: </label>
             <input
                 onChange={props.doChange}
                 type="textarea"
                 id="taskInput"
-
+                placeholder="Tasks"
             />
             <div>
-                <label htmlFor="startDateInput">Start Date: </label>
                 <input
                     onChange={props.doChange}
                     type="text"
                     id="startDateInput"
+                    placeholder="Start Date"
                 />
-                <label htmlFor="endDateInput">End Date: </label>
                 <input
                     onChange={props.doChange}
                     type="text"
                     id="endDateInput"
+                    placeholder="End Date"
                 />
             </div>
         </div>
